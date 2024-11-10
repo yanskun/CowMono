@@ -1,0 +1,19 @@
+DROP TABLE IF EXISTS public.users CASCADE;
+
+DROP TRIGGER IF EXISTS on_auth_user_created ON auth.users;
+
+DROP FUNCTION IF EXISTS public.handle_new_user() CASCADE;
+
+DROP TYPE IF EXISTS role CASCADE;
+
+DROP TABLE IF EXISTS groups CASCADE;
+
+DROP TABLE IF EXISTS groups_users CASCADE;
+
+DROP TABLE IF EXISTS items CASCADE;
+
+DROP TYPE IF EXISTS purchase_attribute CASCADE;
+
+DROP TABLE IF EXISTS settings CASCADE;
+
+DROP EXTENSION IF EXISTS "uuid-ossp";
